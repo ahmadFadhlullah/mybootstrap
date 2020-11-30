@@ -33,7 +33,17 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        @auth
+                            <li class="nav-item">
+                                <a href="{{ url('/products') }}" class="nav-link">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ url('/books') }}" class="nav-link">Books</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ url('/home') }}" class="nav-link">Home</a>
+                            </li>
+                        @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
