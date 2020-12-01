@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Simpan;
+use App\Cart;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $all_simpan = Simpan::all();
+        $all_cart = Cart::all();
+        $no = 0;
+        return view('home', compact('all_simpan','all_cart','no'));
     }
+
+
+
 }

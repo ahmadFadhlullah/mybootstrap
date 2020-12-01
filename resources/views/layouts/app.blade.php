@@ -38,6 +38,12 @@
                                 <a href="{{ url('/products') }}" class="nav-link">Product</a>
                             </li>
                             <li class="nav-item">
+                                <a href="{{ url('/cart') }}" class="nav-link">Cart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('simpan.index') }}" class="nav-link">Simpan</a>
+                            </li>
+                            <li class="nav-item">
                                 <a href="{{ url('/books') }}" class="nav-link">Books</a>
                             </li>
                             <li class="nav-item">
