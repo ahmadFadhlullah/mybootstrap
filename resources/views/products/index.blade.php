@@ -33,10 +33,10 @@
                                                 <form action="{{ url('/products/'.$product->id) }}" method="post">
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-primary btn-small">Hapus</button>
+                                                    <button type="submit" class="btn btn-primary btn-small"> <i class="fas fa-trash"></i> </button>
                                                 </form>
-                                                <a href="{{ url('/products/'.$product->id.'/edit') }}" class="btn btn-small btn-warning">Edit</a>
-                                                <a href="{{ url('/products/'.$product->id.'/detail') }}" class="btn btn-small btn-danger">Detail</a>
+                                                <a href="{{ url('/products/'.$product->id.'/edit') }}" class="btn btn-small btn-warning"> <i class="fas fa-edit"></i> </a>
+                                                <a href="{{ url('/products/'.$product->id.'/detail') }}" class="btn btn-small btn-danger"> <i class="fas fa-info-circle"></i> </a>
                                             </div>
 
 

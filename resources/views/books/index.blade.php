@@ -26,12 +26,12 @@
                 <td>{{ $item->pengarang }}</td>
                 <td>
                     <div class="btn-group">
-                        <a href="{{ route('books.detail',$item->id) }}" class="btn btn-warning btn-sm"> Detail</a>
-                        <a href="{{ route('books.formPut',$item->id) }}" class="btn btn-primary btn-sm"> Edit</a>
+                        <a href="{{ route('books.detail',$item->id) }}" class="btn btn-warning btn-sm"> <i class="fas fa-info-circle"></i> </a>
+                        <a href="{{ route('books.formPut',$item->id) }}" class="btn btn-primary btn-sm"> <i class="fas fa-edit"></i> </a>
                         <form action="{{ route('books.destroy',$item->id) }}" method="post">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" name="submit" class="btn btn-danger btn-sm">Hapus</button>
+                            <button type="submit" name="submit" class="btn btn-danger btn-sm"> <i class="fas fa-trash"></i> </button>
                         </form>
                     </div>
                 </td>

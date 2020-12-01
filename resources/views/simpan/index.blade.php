@@ -30,7 +30,7 @@
                             <form action="{{ route('simpan.destroy',$item->id) }}" method="post">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-primary btn-small">Hapus</button>
+                                <button type="submit" class="btn btn-primary btn-small"> <i class="fas fa-trash"></i> </button>
                             </form>
                         </div>
                     </td>

@@ -24,7 +24,7 @@
                         <form action="{{ route('simpan.add',$search->id) }}" method="post">
                             @csrf
                             <input type="hidden" name="peminjam" value="{{ auth()->user()->name }}">
-                            <button type="submit" class="btn btn-primary" name="submit">Simpan Buku</button>
+                            <button type="submit" class="btn btn-primary" name="submit"> <i class="fas fa-save"></i> Simpan Buku</button>
                         </form>
                     </div>
                 </div>

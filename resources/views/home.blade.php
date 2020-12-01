@@ -38,7 +38,7 @@
                                             <form action="{{ route('simpan.destroy',$item->id) }}" method="post">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-primary btn-small">Hapus</button>
+                                                <button type="submit" class="btn btn-primary btn-small"> <i class="fas fa-trash"></i> Hapus</button>
                                             </form>
                                         </div>
                                     </td>
@@ -81,9 +81,9 @@
                                             <form action="{{ route('carts.destroy',$item->id) }}" method="post">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-primary btn-small">Hapus</button>
+                                                <button type="submit" class="btn btn-primary btn-small"> <i class="fas fa-trash"></i> Hapus</button>
                                             </form>
-                                            <a href="{{ route('carts.edit',$item->id) }}" class="btn btn-small btn-danger">Edit</a>
+                                            <a href="{{ route('carts.edit',$item->id) }}" class="btn btn-small btn-danger"> <i class="fas fa-edit"></i> Edit</a>
                                         </div>
                                     </td>
                                 </tr>
